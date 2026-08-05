@@ -1,5 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL33kocG82t"
-#define BLYNK_TEMPLATE_NAME "IOT SMART STREET LIGHTING"
+// Replace with your own credentials and apis in place of '**********' in the code.
+#define BLYNK_TEMPLATE_ID "**********"
+#define BLYNK_TEMPLATE_NAME "**********"
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
 #include <HTTPClient.h>
@@ -8,9 +9,9 @@
 #include <DHT.h>
 
 // Define Blynk Authentication Token, WiFi credentials
-char auth[] = "Ql2ZSyxC65LQwzPDN7WKWYHLeNlQWdo1"; // Replace with your Blynk auth token
-char ssid[] = "Galaxy";        // Replace with your WiFi SSID
-char pass[] = "12345678";    // Replace with your WiFi Password
+char auth[] = "**********"; // Replace with your Blynk auth token
+char ssid[] = "**********";        // Replace with your WiFi SSID
+char pass[] = "**********";    // Replace with your WiFi Password
 
 // Define pin numbers
 #define IR1 13  // IR Sensor 2
@@ -350,8 +351,8 @@ else
 
 
 // OpenWeatherMap API
-String city = "Kolkata"; // Replace with your city
-String apiKey = "2e848c3f88769f52edd7d7be37bb762a";
+String city = "**********"; // Replace with your city
+String apiKey = "**********";
 String serverPath = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey + "&units=metric";
 
 // Function to fetch weather data
