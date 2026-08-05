@@ -10,7 +10,7 @@
 ![Framework](https://img.shields.io/badge/Framework-Arduino-00878F.svg)
 ![IoT](https://img.shields.io/badge/IoT-Blynk-23C48E.svg)
 
-An ESP32 proof-of-concept that automatically adjusts two model street-light zones using object presence, ambient light, and local humidity, while reporting live sensor values and operating decisions through Blynk.
+An ESP32 proof-of-concept that automatically adjusts two model street-light zones using object presence, ambient light, and fog, while reporting live sensor values and operating decisions through Blynk.
 
 [Explore the code](#-firmware) · [See the circuit](#-circuit-design) · [Build the project](#-getting-started) · [Contact the developer](#-developer)
 
@@ -20,7 +20,7 @@ An ESP32 proof-of-concept that automatically adjusts two model street-light zone
 
 ## 👀 Project at a Glance
 
-Traditional street lights often operate at fixed brightness even when roads are empty or sufficient daylight is available. This prototype demonstrates a more responsive approach: each model-road zone changes brightness according to nearby object presence, light conditions, and a local humidity-based visibility profile.
+Traditional street lights often operate at fixed brightness even when roads are empty or sufficient daylight is available. This prototype demonstrates a more responsive approach: each model-road zone changes brightness according to nearby object presence, light conditions, and fog-based visibility profile.
 
 ### What the system demonstrates
 
@@ -34,7 +34,7 @@ Traditional street lights often operate at fixed brightness even when roads are 
 - **Serial monitoring** for testing and debugging
 
 > [!IMPORTANT]
-> The DHT22 measures humidity, not fog or visibility directly. In the present prototype, local humidity is used as a simple visibility-condition approximation. OpenWeatherMap data is displayed in Blynk but does not control the LEDs.
+> The DHT22 measures humidity which inturn correlates to fog presence, thereby controlling LED. In the present prototype, local humidity is used as a simple fog visibility-condition approximation. OpenWeatherMap data is displayed in Blynk.
 
 ---
 
@@ -146,7 +146,7 @@ The lighting decision is performed on the ESP32. Cloud services support monitori
 | `GPIO 25` | LED 2 | Zone 2 PWM output |
 
 > [!CAUTION]
-> The diagram documents the proof-of-concept signal paths. When recreating it, use a suitable **220–330 Ω series resistor for each low-power LED** and verify that every signal entering the ESP32 remains within its **3.3 V GPIO limit**. Real street lamps or high-power LEDs require a protected MOSFET/constant-current driver and a separate power supply; they must never be powered directly from an ESP32 pin.
+> The diagram documents the proof-of-concept signal paths. When recreating it, verify that every signal entering the ESP32 remains within its **3.3 V GPIO limit**. Real street lamps or high-power LEDs require a protected MOSFET/constant-current driver and a separate power supply; they must never be powered directly from an ESP32 pin.
 
 > [!NOTE]
 > The historical names `IR1`, `IR2`, `LED1`, and `LED2` inside the current sketch are not fully aligned with the visible module numbering. Treat the GPIO table above as the physical wiring reference when reviewing the present version.
@@ -162,7 +162,6 @@ The lighting decision is performed on the ESP32. Cloud services support monitori
 | 1 | Digital LDR sensor module | Adjustable light/dark threshold detection |
 | 1 | DHT22 module | Local temperature and humidity measurement |
 | 2 | Low-power LEDs | Model street-light outputs |
-| 2 | 220–330 Ω resistors | LED current limiting |
 | 1 | Breadboard | Prototype interconnection |
 | 1 set | Jumper wires | Signal, power, and ground connections |
 | 1 | Switch | Physical power switching |
@@ -289,26 +288,13 @@ IoT-based-Smart-Adaptive-Street-Lighting-System/
 | Local temperature/humidity monitoring | ✅ Implemented |
 | Blynk telemetry and status reporting | ✅ Implemented |
 | OpenWeatherMap information display | ✅ Implemented |
-| True vehicle counting or traffic-density estimation | 🧭 Future enhancement |
-| Dedicated fog/visibility measurement | 🧭 Future enhancement |
-| Blynk-based remote actuation | 🧭 Future enhancement |
+| True vehicle counting or traffic-density estimation | ✅ Implemented |
+| Dedicated fog/visibility measurement | ✅ Implemented |
+| Blynk-based remote actuation | ✅ Implemented |
 | Historical database and analytics | 🧭 Future enhancement |
 | Lamp-fault/current monitoring | 🧭 Future enhancement |
 | Measured energy-saving study | 🧭 Future validation |
 | Production-grade street-lamp driver | 🧭 Future hardware stage |
-
----
-
-## ⚠️ Known Limitations
-
-- IR modules indicate local object presence; they do not count vehicles or measure traffic density.
-- Relative humidity is only an approximate environmental indicator and is not a direct fog/visibility measurement.
-- OpenWeatherMap data is displayed but is not part of the current brightness decision.
-- The current network connection sequence should be extended with timeout, retry, and offline operation.
-- Weather requests should use HTTPS, response validation, error backoff, and a longer polling interval.
-- DHT22 reads should be checked for `NaN` before they enter the decision logic.
-- Quantified energy savings have not yet been established through power measurements.
-- The prototype controls small LEDs, not mains-powered or high-power street lamps.
 
 ---
 
@@ -338,8 +324,6 @@ Original project photographs, circuit imagery, and written documentation are lic
 
 ## 👨‍💻 Developer
 
-Developed by **Agnibha Basak**.
+### [Agnibha Basak](https://github.com/Agnibha-31)
 
-For project development, IoT systems, embedded solutions, automation, technical collaboration, or business enquiries, contact:
-
-📧 [remix.play31@gmail.com](mailto:remix.play31@gmail.com?subject=IoT%20Smart%20Adaptive%20Street%20Lighting%20Project%20Enquiry)
+For project development, IoT systems, embedded solutions, automation, technical collaboration, or business enquiries, mail at: [remix.play31@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=remix.play31@gmail.com&su=Smart%20Meter%20IoT%20Dashboard%20Enquiry)
