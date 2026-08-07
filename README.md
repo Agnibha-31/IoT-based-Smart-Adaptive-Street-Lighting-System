@@ -391,12 +391,15 @@ Insert personal values only in a local development copy. Never commit active cre
 
 ## 📁 Repository Contents
 
+## 📁 Repository Contents
+
 ```text
 IoT-based-Smart-Adaptive-Street-Lighting-System/
 ├── README.md
 ├── LICENSE
+├── LICENSE-MEDIA
 ├── HARDWARE_LICENSE.txt
-├── MEDIA_LICENSE.md
+├── MEDIA_SCOPE.md
 ├── NOTICE
 ├── System Code.ino
 ├── Circuit Design.png
@@ -423,9 +426,11 @@ IoT-based-Smart-Adaptive-Street-Lighting-System/
 | [`PCB Fabrication/`](./PCB%20Fabrication/) | Corrected Gerber layers, PTH/NPTH drill outputs, job metadata, and fabrication notes |
 | [`Prototype Img 1.jpg`](./Prototype%20Img%201.jpg) | Front-perspective prototype photograph |
 | [`Prototype Img 2.jpg`](./Prototype%20Img%202.jpg) | Top-perspective prototype photograph |
-| [`LICENSE`](./LICENSE) | Apache License 2.0 for firmware/source code |
-| [`HARDWARE_LICENSE.txt`](./HARDWARE_LICENSE.txt) | CERN-OHL-P-2.0 for hardware-design material |
-| [`MEDIA_LICENSE.md`](./MEDIA_LICENSE.md) | CC BY 4.0 notice for photographs and written documentation |
+| [`LICENSE`](./LICENSE) | Apache License 2.0 governing the firmware and other original software |
+| [`HARDWARE_LICENSE.txt`](./HARDWARE_LICENSE.txt) | CERN-OHL-P-2.0 governing original hardware-design material |
+| [`LICENSE-MEDIA`](./LICENSE-MEDIA) | Complete CC BY 4.0 legal terms for eligible project-owned media and documentation |
+| [`MEDIA_SCOPE.md`](./MEDIA_SCOPE.md) | Defines the media and documentation covered by CC BY 4.0, applicable exclusions, and attribution requirements |
+| [`NOTICE`](./NOTICE) | Summarizes the repository’s material-specific licensing structure and third-party exclusions |
 
 ---
 
@@ -501,17 +506,17 @@ This release demonstrates the complete proof-of-concept workflow while keeping t
 
 ## 📜 Licensing
 
-This repository uses a clear license for each type of work:
+This repository uses a material-specific licensing structure for software, hardware-design material, and project-owned media and documentation.
 
-| Repository material | License |
-|---|---|
-| ESP32 firmware and other software source | [Apache License 2.0](LICENSE) |
-| Original circuit, schematic, PCB design, Gerber, drill, job, and future editable KiCad files | [CERN Open Hardware Licence Version 2 — Permissive](HARDWARE_LICENSE.txt) |
-| Original prototype photographs and written documentation | [Creative Commons Attribution 4.0 International](MEDIA_LICENSE.md) |
+| Repository material | Governing terms | Scope and details |
+|---|---|---|
+| ESP32 firmware and other original software source | [Apache License 2.0](LICENSE) | Applies to project-authored software and firmware |
+| Original circuit, schematic, PCB design, Gerber, drill, job, and future editable KiCad files | [CERN Open Hardware Licence Version 2 — Permissive](HARDWARE_LICENSE.txt) | Applies to original project-owned hardware-design material |
+| Original prototype photographs and written documentation | [Creative Commons Attribution 4.0 International](LICENSE-MEDIA) | See [`MEDIA_SCOPE.md`](MEDIA_SCOPE.md) for covered material, exclusions, and attribution requirements |
 
-Third-party libraries, trademarks, product names, logos, KiCad/Fritzing assets, symbols, footprints, fonts, icons, and component artwork remain subject to their respective owners' terms.
+The repository licenses apply only to material and rights owned by, or validly licensable by, the project copyright holder. They do not replace, override, or relicense any third-party library, trademark, product name, logo, KiCad/Fritzing asset, symbol, footprint, font, icon, component artwork, or other externally sourced material.
 
-The hardware files are shared as open design material so that others can study, reproduce, and improve the work under the stated license. Builders should still select suitable manufacturing options and review the final production preview for their intended use.
+The hardware files are shared as open-design material so that others can study, reproduce, and improve the work under the stated license. Builders should still select suitable manufacturing options and review the final production preview for their intended use.
 
 ---
 
