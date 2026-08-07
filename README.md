@@ -6,7 +6,7 @@
 
 [![Code License: Apache 2.0](https://img.shields.io/badge/Code%20License-Apache%202.0-0B6E99.svg)](LICENSE)
 [![Hardware License: CERN-OHL-P-2.0](https://img.shields.io/badge/Hardware%20License-CERN--OHL--P--2.0-6F42C1.svg)](HARDWARE_LICENSE.txt)
-[![Media License: CC BY 4.0](https://img.shields.io/badge/Media%20License-CC%20BY%204.0-lightgrey.svg)](MEDIA_LICENSE.md)
+[![Media License: CC BY 4.0](https://img.shields.io/badge/Media%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-MEDIA)
 ![Platform](https://img.shields.io/badge/Platform-ESP32-E7352C.svg)
 ![Framework](https://img.shields.io/badge/Framework-Arduino-00878F.svg)
 ![PCB](https://img.shields.io/badge/PCB-KiCad-314CB0.svg)
