@@ -252,7 +252,6 @@ This is a package-level consistency review, not a substitute for the selected ma
 4. Choose the board options that agree with the design metadata, such as two layers and 1.6 mm thickness.
 5. Inspect the manufacturer's final rendered preview before confirming the order.
 
-The folder-level fabrication instructions are available in [`PCB Fabrication/README.md`](./PCB%20Fabrication/README.md).
 
 ### Editable design sources
 
@@ -408,7 +407,6 @@ IoT-based-Smart-Adaptive-Street-Lighting-System/
 ├── Prototype Img 1.jpg
 ├── Prototype Img 2.jpg
 └── PCB Fabrication/
-    ├── README.md
     ├── *-F_Cu.gbr / *-B_Cu.gbr
     ├── *-F_Mask.gbr / *-B_Mask.gbr
     ├── *-F_Silkscreen.gbr
