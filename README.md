@@ -10,7 +10,6 @@
 ![Platform](https://img.shields.io/badge/Platform-ESP32-E7352C.svg)
 ![Framework](https://img.shields.io/badge/Framework-Arduino-00878F.svg)
 ![PCB](https://img.shields.io/badge/PCB-KiCad-314CB0.svg)
-![Fabrication](https://img.shields.io/badge/Fabrication%20Package-Corrected-2EA44F.svg)
 ![IoT](https://img.shields.io/badge/IoT-Blynk-23C48E.svg)
 
 An ESP32-based proof-of-concept that adjusts two model street-light zones using object presence, ambient light, and local humidity. It reports live system information through Blynk and includes a custom schematic, PCB layout, and Gerber/drill fabrication export.
