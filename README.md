@@ -15,11 +15,22 @@
 
 An ESP32-based proof-of-concept that adjusts two model street-light zones using object presence, ambient light, and local humidity. It reports live system information through Blynk and includes a custom schematic, PCB layout, and Gerber/drill fabrication export.
 
-[Working prototype](#-working-prototype) · [System operation](#-how-it-works) · [Hardware design](#-electronic-and-pcb-design) · [Fabrication files](#-pcb-fabrication-package) · [Getting started](#-getting-started) · [Developer](#-developer)
+<p>
+  <a href="#readme-overview">Overview</a> ·
+  <a href="#readme-prototype">Working prototype</a> ·
+  <a href="#readme-operation">System operation</a> ·
+  <a href="#readme-hardware-design">Hardware design</a> ·
+  <a href="#readme-fabrication">Fabrication files</a> ·
+  <a href="#readme-getting-started">Getting started</a> ·
+  <a href="#readme-licensing">Licensing</a> ·
+  <a href="#readme-developer">Developer</a>
+</p>
 
 </div>
 
 ---
+
+<a name="readme-overview"></a>
 
 ## 👀 Project at a Glance
 
@@ -44,6 +55,8 @@ Conventional street lights commonly operate at fixed output even when roads are 
 
 ---
 
+<a name="readme-prototype"></a>
+
 ## 📸 Working Prototype
 
 The physical proof-of-concept represents a two-zone roadway with two lamp posts, an ESP32 controller, sensor modules, and prototype wiring.
@@ -62,6 +75,8 @@ The physical proof-of-concept represents a two-zone roadway with two lamp posts,
 </table>
 
 ---
+
+<a name="readme-operation"></a>
 
 ## 🧠 How It Works
 
@@ -137,6 +152,8 @@ The lighting decision is performed on the ESP32. The present Blynk integration r
 
 ---
 
+<a name="readme-hardware-design"></a>
+
 ## 🧱 Electronic and PCB Design
 
 The repository now documents the hardware at three levels: the original connection diagram, an electronic schematic, and a PCB-layout preview.
@@ -179,6 +196,8 @@ The repository now documents the hardware at three levels: the original connecti
 > This is a low-voltage proof-of-concept controller. Confirm ESP32-compatible signal levels and independently review the schematic, PCB rules, clearances, footprints, orientation, power distribution, and manufacturer preview before assembly. Real street lamps or high-power LEDs require a suitable protected driver stage and separate power source.
 
 ---
+
+<a name="readme-fabrication"></a>
 
 ## 🏭 PCB Fabrication Package
 
@@ -309,6 +328,8 @@ The ESP32 application is provided in [`System Code.ino`](./System%20Code.ino).
 The sketch uses the newer ESP32 LEDC attachment API. Record the exact ESP32 board-package version used for successful compilation and testing.
 
 ---
+
+<a name="readme-getting-started"></a>
 
 ## 🚀 Getting Started
 
@@ -477,6 +498,8 @@ This release demonstrates the complete proof-of-concept workflow while keeping t
 
 ---
 
+<a name="readme-licensing"></a>
+
 ## 📜 Licensing
 
 This repository uses a clear license for each type of work:
@@ -493,6 +516,8 @@ The hardware files are shared as open design material so that others can study, 
 
 ---
 
+<a name="readme-developer"></a>
+
 ## 👨‍💻 Developer
 
 ### [Agnibha Basak](https://github.com/Agnibha-31)
@@ -500,3 +525,4 @@ The hardware files are shared as open design material so that others can study, 
 For IoT development, embedded systems, automation, PCB design, technical collaboration, or business enquiries:
 
 📧 [remix.play31@gmail.com](mailto:remix.play31@gmail.com?subject=IoT%20Smart%20Adaptive%20Street%20Lighting%20Project%20Enquiry)
+
