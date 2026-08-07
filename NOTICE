@@ -1,17 +1,23 @@
 IoT-Based Smart Adaptive Street Lighting System
 Copyright 2026 Agnibha Basak
 
-Firmware and other software source in this repository are made available
-under the Apache License, Version 2.0. See LICENSE.
+Firmware and other original software source in this repository are made
+available under the Apache License, Version 2.0. The complete governing
+terms are contained in LICENSE.
 
-Original circuit, schematic, PCB, Gerber, drill, job, and editable hardware
-design files are made available under the CERN Open Hardware Licence
-Version 2 - Permissive. See HARDWARE_LICENSE.txt.
+Original circuit, schematic, PCB, Gerber, drill, job, and editable
+hardware-design files are made available under the CERN Open Hardware
+Licence Version 2 - Permissive. The complete governing terms are contained
+in HARDWARE_LICENSE.txt.
 
-Original prototype photographs and written documentation are made available
-under the Creative Commons Attribution 4.0 International License unless
-otherwise stated. See MEDIA_LICENSE.md.
+Original prototype photographs and project-authored written documentation
+identified in MEDIA_SCOPE.md are made available under the Creative Commons
+Attribution 4.0 International License, but only to the extent that the
+project copyright holder owns or controls the necessary rights. The complete
+governing CC BY 4.0 terms are contained in LICENSE-MEDIA. MEDIA_SCOPE.md
+defines the covered material, exclusions, and attribution requirements.
 
 Third-party libraries, trademarks, product names, logos, symbols, footprints,
-fonts, icons, and component artwork remain subject to their respective owners'
-terms.
+fonts, icons, component artwork, and other externally sourced material remain
+subject to their respective owners' terms and are not relicensed by this
+NOTICE or the repository's project-specific license files.
