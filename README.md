@@ -497,4 +497,6 @@ The hardware files are shared as open design material so that others can study, 
 
 ### [Agnibha Basak](https://github.com/Agnibha-31)
 
-For IoT development, embedded systems, automation, PCB design, technical collaboration, or business enquiries, mail at: [remix.play31@gmail.com](mailto:remix.play31@gmail.com?subject=IoT%20Smart%20Adaptive%20Street%20Lighting%20Project%20Enquiry)
+For IoT development, embedded systems, automation, PCB design, technical collaboration, or business enquiries:
+
+📧 [remix.play31@gmail.com](mailto:remix.play31@gmail.com?subject=IoT%20Smart%20Adaptive%20Street%20Lighting%20Project%20Enquiry)
